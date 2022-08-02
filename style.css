@@ -1,0 +1,121 @@
+/* 
+--Verydarkblue1 (main BG): hsl(217, 54%, 11%);
+--Verydarkblue2 (card BG): hsl(216, 50%, 16%);
+--Verydarkblue3 (line): hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%) */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --Verydarkblue1: hsl(217, 54%, 11%);
+  --Verydarkblue2: hsl(216, 50%, 16%);
+  --Verydarkblue3: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+  --Softblue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+}
+
+body {
+  background-color: var(--Verydarkblue1);
+  font-family: "Outfit", sans-serif;
+}
+/*300x510*/
+.BoxPrimary {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SecondBox {
+  background-color: var(--Verydarkblue2);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 300px;
+  height: 510px;
+  border-radius: 3%;
+  box-shadow: 5px 5px 17px 5px rgba(0, 0, 0, 0.6);
+}
+
+/*250x250*/
+.img {
+  background-image: url(images/rsz_image-equilibrium.jpg);
+  width: 250px;
+  height: 250px;
+  margin-top: 20px;
+  border-radius: 3%;
+}
+
+.titulo {
+  color: white;
+  font-size: 18px;
+  margin-top: 270px;
+  padding-right: 100px;
+}
+
+.thirBox {
+  font-size: 14px;
+  height: 60px;
+  width: 250px;
+  text-align: left;
+  color: hsl(215, 51%, 70%);
+}
+
+.fourthBox {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}
+
+.eth {
+  background-image: url(images/icon-ethereum.svg);
+  background-repeat: no-repeat;
+  background-position: 1px;
+  color: var(--Cyan);
+  font-size: 13px;
+}
+
+.fourthBox .eth p {
+  padding-left: 15px;
+}
+
+.days {
+  background-image: url(images/icon-clock.svg);
+  background-repeat: no-repeat;
+  background-position: 1px;
+  color: var(--Softblue);
+  font-size: 13px;
+}
+
+.fourthBox .days p {
+  padding-left: 20px;
+}
+
+.fifthBox {
+  display: flex;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--Verydarkblue3);
+  width: 250px;
+  font-size: 13px;
+  align-items: center;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  left: 50px;
+  background-position: center;
+  border-radius: 50%;
+  border: solid 1px white;
+}
+
+.fifthBox .color1 {
+  color: var(--Softblue);
+  padding-right: 3px;
+  padding-left: 15px;
+}
+
+.fifthBox .color2 {
+  color: white;
+}
